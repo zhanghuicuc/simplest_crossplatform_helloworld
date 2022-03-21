@@ -41,7 +41,7 @@ set(header_files
 if (CMAKE_SYSTEM_NAME MATCHES "Android")
     target_link_libraries(schdemo
             android
-#            ${android_log_lib}
+            ${android_log_lib}
             ${PLATFORM_LIBS})
 elseif (CMAKE_SYSTEM_NAME MATCHES "iOS")
     target_link_libraries(schdemo
